@@ -1,0 +1,29 @@
+@import './var.less';
+@import './theme/theme.module.less';
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  user-select: none;
+}
+
+#nprogress .bar {
+  background: @primary-color !important;
+}
+
+.ant-layout,
+.ant-menu {
+  min-height: 100%;
+}
+
+.ant-menu {
+  text-align: center;
+}
+
+.ant-menu-inline,
+.ant-menu-vertical {
+  border: none;
+}

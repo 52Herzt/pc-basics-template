@@ -1,0 +1,178 @@
+@import './var.less';
+@import './mixin.less';
+@import './theme/theme.module.less';
+
+// flex 布局 --满屏
+.flex-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-box-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical {
+  align-items: center;
+}
+
+.middle {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item {
+  flex: 1 auto;
+}
+
+.flex-full {
+  flex: 1;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-hide {
+  overflow: hidden;
+}
+
+// 浮动布局
+.clearfix {
+  *zoom: 1;
+
+  &::before,
+  &::after {
+    display: table;
+    content: ' ';
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+// 文本样式
+.text-align(left center right);
+
+.text-vertical-middle {
+  vertical-align: middle;
+}
+
+.ft-weight {
+  font-weight: bold;
+}
+
+.ft-size-s {
+  font-size: @font-size-s;
+}
+.ft-size-m {
+  font-size: @font-size-m;
+}
+.ft-size-l {
+  font-size: @font-size-l;
+}
+.ft-size-xl {
+  font-size: @font-size-xl;
+}
+.ft-size-xxl {
+  font-size: @font-size-xxl;
+}
+
+.ft-weight-bold {
+  font-weight: bold;
+}
+
+// .linear-text {
+//   color: transparent !important;
+//   font-weight: 700;
+//   background-image: @text-linear;
+//   -webkit-background-clip: text;
+//   background-clip: text;
+// }
+
+// 内外边距
+.margin(4 6 8 10 12 14 16 20 24 28, top);
+.margin(4 6 8 10 12 14 16 20 24 28, right);
+.margin(4 6 8 10 12 14 16 20 24 28, bottom);
+.margin(4 6 8 10 12 14 16 20 24 28, left);
+
+.padding(4 6 8 10 12 14 16 20 24 28 30, top);
+.padding(4 6 8 10 12 14 16 20 24 28, right);
+.padding(4 6 8 10 12 14 16 20 24 28, bottom);
+.padding(4 6 8 10 12 14 16 20 24 28, left);
+
+.pointer {
+  cursor: pointer;
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ellipsis2 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.box-shadow {
+  box-shadow: 0 1px 16px -8px #333;
+}
+
+// 列表展示布局
+.list-align {
+  .van-row {
+    margin: 10px 0;
+    font-weight: normal;
+    font-size: 28px;
+
+    .van-col {
+      text-indent: 10px;
+    }
+    .van-col:first-child {
+      text-align: right;
+    }
+  }
+}

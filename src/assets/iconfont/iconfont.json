@@ -1,0 +1,44 @@
+{
+  "id": "4138079",
+  "name": "winwin综合平台",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5943269",
+      "name": "正确",
+      "font_class": "sel",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "5666397",
+      "name": "主题",
+      "font_class": "theme",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "18608363",
+      "name": "关于我们",
+      "font_class": "aboutUs",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "1288646",
+      "name": "个人中心",
+      "font_class": "personal",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "24271961",
+      "name": "首页",
+      "font_class": "home",
+      "unicode": "e677",
+      "unicode_decimal": 58999
+    }
+  ]
+}

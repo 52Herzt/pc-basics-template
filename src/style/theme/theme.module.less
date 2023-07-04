@@ -1,0 +1,14 @@
+@themes: theme-1 #00b3a7 #27b9b9 #077a78, theme-2 #ff7100 #ff9540 #ffb173, theme-3 #00aa72 #35d4a0 #60d4ae,
+  theme-4 #580ead #ab7edf #be97eb, theme-5 #152bac #929ddb #818dd6, theme-6 #009999 #33cccc #6de2e2,
+  theme-7 #ff4900 #ff7640 #ff9b73;
+
+// 默认主题色
+@primary-color: var(--theme-main-color, #00b3a7);
+@minor_color: var(--theme-minor-color, #27b9b9);
+@base_color: var(--theme_base_color, #077a78);
+
+/* stylelint-disable-next-line selector-pseudo-class-no-unknown */
+:export {
+  /* stylelint-disable-next-line property-no-unknown */
+  themes: @themes;
+}

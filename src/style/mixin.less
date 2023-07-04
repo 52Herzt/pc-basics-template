@@ -1,0 +1,25 @@
+.text-align(@align) {
+  each(@align, {
+      .text-@{value} {
+        text-align: @value;
+      }
+    });
+}
+
+.margin(@list, @direction) {
+  @d: replace(@direction, '(\w).+', '$1', 'ig');
+  each(@list, {
+    .m@{d}-@{value} {
+      margin-@{direction}: unit(@value, px);
+    }
+  });
+}
+
+.padding(@list, @direction) {
+  @d: replace(@direction, '(\w).+', '$1', 'ig');
+  each(@list, {
+    .p@{d}-@{value} {
+      padding-@{direction}: unit(@value, px);
+    }
+  });
+}
