@@ -1,5 +1,5 @@
 <template>
-  <a-select v-model:value="localeLang" :options="langList" @change="changeLang" />
+  <a-select v-model:value="localeLang" :options="langList" @change="changeLocale" />
 </template>
 
 <script setup>
@@ -20,7 +20,7 @@ if (LOCALE) {
   localStorage.setItem('LOCALE', commonStore.locale)
 }
 
-function changeLang(val) {
+function changeLocale(val) {
   NProgress.start()
   proxy.$i18n.locale = val
   localStorage.setItem('LOCALE', val)
@@ -31,6 +31,6 @@ function changeLang(val) {
 }
 
 onMounted(() => {
-  changeLang(localeLang.value)
+  changeLocale(localeLang.value)
 })
 </script>

@@ -1,6 +1,8 @@
 import NProgress from 'nprogress'
 import { createRouter, createWebHashHistory } from 'vue-router'
 
+import { isMobile } from '@/utils/utils'
+
 NProgress.configure({
   easing: 'ease',
   speed: 500,
@@ -10,6 +12,10 @@ NProgress.configure({
 })
 
 const beforeEach = async (to, from, next) => {
+  if (isMobile()) {
+    return (window.location = 'http://localhost:8081')
+  }
+
   NProgress.start()
   if (to.meta.requireLogin) {
     // 是否登录，暂未对接直接放行

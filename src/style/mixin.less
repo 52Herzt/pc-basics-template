@@ -23,3 +23,11 @@
     }
   });
 }
+
+.ft-size(@align) {
+  each(@align, {
+      .ft-size-@{value} {
+        font-size: unit(@value, px);
+      }
+    });
+}
